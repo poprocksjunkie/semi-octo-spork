@@ -63,11 +63,11 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+<!-- Skills Section -->
     <section id="skills" class="bg-white text-gray-800 py-16 md:py-24 px-5 md:px-12 lg:px-20 text-center">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5">Skills</h2>
         <p class="text-base sm:text-lg max-w-2xl mx-auto mb-16 text-gray-600">
-            Living and working abroad helped further develop and learn many skill.
+            Living and working abroad for 18 years helped me to develop further and learn many skills.
         </p>
 
         <!-- Technical Skills Item -->
@@ -80,7 +80,7 @@
                 <p class="text-gray-600 mb-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <button class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 focus:outline-none" onclick="showModal('tech-skills-modal')">
+                <button class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 focus:outline-none" popovertarget="tech-skills-popover">
                     View skills <i class="fas fa-chevron-right ml-2"></i>
                 </button>
             </div>
@@ -96,7 +96,7 @@
                 <p class="text-gray-600 mb-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <button class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300 focus:outline-none" onclick="showModal('edu-skills-modal')">
+                <button class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition-colors duration-300 focus:outline-none" popovertarget="edu-skills-popover">
                     View skills <i class="fas fa-chevron-right ml-2"></i>
                 </button>
             </div>
@@ -112,7 +112,7 @@
                 <p class="text-gray-600 mb-6">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
-                <button class="bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300 focus:outline-none" onclick="showModal('soft-skills-modal')">
+                <button class="bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300 focus:outline-none" popovertarget="soft-skills-popover">
                     View skills <i class="fas fa-chevron-right ml-2"></i>
                 </button>
             </div>
@@ -245,53 +245,45 @@
         <!--<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 font-bold">Credits</a> -->
     </footer>
 
-    <!-- Modals (hidden by default) -->
-    <div id="tech-skills-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-70 flex items-center justify-center">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Technical Skills</h3>
-            <div class="text-gray-600">
-                <p>Skills</p>
-                <p>More skills</p>
-            </div>
-            <button class="mt-6 bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors" onclick="hideModal('tech-skills-modal')">
-                Close
+   <!-- Popovers for Skills -->
+    <div id="tech-skills-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-bold">Technical Skills</h3>
+            <button popovertarget="tech-skills-popover" popovertargetaction="hide" class="text-gray-500 hover:text-gray-700 transition-colors duration-200 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
-    </div>
-    <div id="edu-skills-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-70 flex items-center justify-center">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Education Skills</h3>
-            <div class="text-gray-600">
-                <p>Skills</p>
-                <p>More skills</p>
-            </div>
-            <button class="mt-6 bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors" onclick="hideModal('edu-skills-modal')">
-                Close
-            </button>
+        <div class="text-gray-600">
+            <p>Skills</p>
+            <p>More skills</p>
         </div>
     </div>
-    <div id="soft-skills-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-70 flex items-center justify-center">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Soft Skills</h3>
-            <div class="text-gray-600">
-                <p>Skills</p>
-                <p>More skills</p>
-            </div>
-            <button class="mt-6 bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors" onclick="hideModal('soft-skills-modal')">
-                Close
+    
+    <div id="edu-skills-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-bold">Education Skills</h3>
+            <button popovertarget="edu-skills-popover" popovertargetaction="hide" class="text-gray-500 hover:text-gray-700 transition-colors duration-200 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
+        <div class="text-gray-600">
+            <p>Skills</p>
+            <p>More skills</p>
+        </div>
     </div>
-
-    <script>
-        function showModal(id) {
-            document.getElementById(id).classList.remove('hidden');
-        }
-
-        function hideModal(id) {
-            document.getElementById(id).classList.add('hidden');
-        }
-    </script>
+    
+    <div id="soft-skills-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-bold">Soft Skills</h3>
+            <button popovertarget="soft-skills-popover" popovertargetaction="hide" class="text-gray-500 hover:text-gray-700 transition-colors duration-200 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="text-gray-600">
+            <p>Skills</p>
+            <p>More skills</p>
+        </div>
+    </div>
 
 </body>
 </html>
