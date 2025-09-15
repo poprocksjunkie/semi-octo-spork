@@ -180,7 +180,17 @@
                 </p>
                 <div class="flex items-center gap-4">
                     <img src="images/client4.jpg" alt="Zach Lach" class="w-16 h-16 rounded-full object-cover">
-                    <span class="font-bold text-lg text-white">Zach Lach<br><i class="font-normal text-sm text-gray-400">BCIS - Dean of Elementary</i></span>
+                    <span class="font-bold text-lg text-white">Zach Lach<br><i class="font-normal text-sm text-gray-400">Sekolah Ciputra - English Specialist</i></span>
+                </div>
+            </div>
+            <!-- Testimonial Card 5 -->
+            <div class="col-span-2 bg-[#2a2a2a] p-8 rounded-xl shadow-lg relative text-left">
+                <p class="text-lg text-gray-200 italic mb-6 relative z-10">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                </p>
+                <div class="flex items-center gap-4">
+                    <img src="images/client5.jpg" alt="Braden Cobb" class="w-16 h-16 rounded-full object-cover">
+                    <span class="font-bold text-lg text-white">Braden Cobb<br><i class="font-normal text-sm text-gray-400"><a href="https://www.kidzeconomy.com">KidzEconomy - CEO</a></i></span>
                 </div>
             </div>
         </div>
@@ -188,7 +198,7 @@
 
     <!-- Work Section -->
     <section id="previouswork" class="bg-white text-gray-800 py-16 md:py-24 px-5 md:px-12 lg:px-20 text-center">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5">Past Work Experiences</h2>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5">Previous Work Experiences</h2>
         <p class="text-base sm:text-lg max-w-2xl mx-auto mb-16 text-gray-600">
             Here is some information on my positions and duties at the last four places I worked.
         </p>
@@ -202,9 +212,9 @@
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">International Schools of North America</h3>
                     <h4 class="text-l sm:text-xl font-bold text-gray-800 mb-2">Ho Chi Minh City, Vietnam</h4>
                     <p class="text-gray-600 mb-6">School year 2023-2024</p>
-                    <a href="#" class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                    <button class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300" popovertarget="sna-work-popover">
                         Know more <i class="fas fa-chevron-right ml-2"></i>
-                    </a>
+
                 </div>
             </div>
             <!-- Work Item 2 -->
@@ -216,9 +226,9 @@
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">Uruguayan American School</h3>
                     <h4 class="text-l sm:text-xl font-bold text-gray-800 mb-2">Montevideo, Uruguay</h4>
                     <p class="text-gray-600 mb-6">School year 2022-2023</p>
-                    <a href="#" class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                    <button class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300" popovertarget="uas-work-popover">
                         Know more <i class="fas fa-chevron-right ml-2"></i>
-                    </a>
+
                 </div>
             </div>
              <!-- Work Item 3 -->
@@ -230,9 +240,9 @@
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">Quality Schools International</h3>
                     <h4 class="text-l sm:text-xl font-bold text-gray-800 mb-2">Shenzhen, China</h4>
                     <p class="text-gray-600 mb-6">School years 2020-2022</p>
-                    <a href="#" class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                    <button class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300" popovertarget="qsi-work-popover">
                         Know more <i class="fas fa-chevron-right ml-2"></i>
-                    </a>
+
                 </div>
             </div>
             <!-- Work Item 4 -->
@@ -244,9 +254,8 @@
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">Buena Vista Concordia International School</h3>
                     <h4 class="text-l sm:text-xl font-bold text-gray-800 mb-2">Shenzhen, China</h4>
                     <p class="text-gray-600 mb-6">School years 2017-2020</p>
-                    <a href="#" class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300">
+                    <button class="inline-flex items-center bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300" popovertarget="bcis-work-popover">
                         Know more <i class="fas fa-chevron-right ml-2"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -319,5 +328,65 @@
         </div>
     </div>
 
+    <!-- Popovers for Work Section -->
+    <div id="sna-work-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold">ManageBac and NWEA MAP Testing Systems Administrator / IB MYP Design Teacher</h3>
+            <button popovertarget="sna-work-popover" popovertargetaction="hide" class="text-gray-500 hover:text-gray-700 transition-colors duration-200 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="text-gray-600">
+            <h5 class="text-large font-bold">ManageBac Systems Administration:</h5>
+            <ul class="list-disc">
+                <li>Administered the ManageBac learning management system, overseeing user accounts, course
+                    creation, and data integrity for PYP, MYP, and DP programs.</li>
+                <li>Provided technical support and training to faculty, students, and parents on ManageBac functions.</li>
+                <li>Managed the end-to-end administration of NWEA MAP Growth testing.</li>
+                <li>Designed and delivered engaging, inquiry-based IB MYP Design curriculum, fostering critical
+                    thinking, creativity, and problem-solving skills.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="uas-work-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h5 class="text-large font-bold">ManageBac Systems Administration:</h5>
+            <ul class="list-disc">
+                <li>Administered the ManageBac learning management system, overseeing user accounts, course
+                    creation, and data integrity for PYP, MYP, and DP programs.</li>
+                <li>Provided technical support and training to faculty, students, and parents on ManageBac functions.</li>
+                <li>Managed the end-to-end administration of NWEA MAP Growth testing.</li>
+                <li>Designed and delivered engaging, inquiry-based IB MYP Design curriculum, fostering critical
+                    thinking, creativity, and problem-solving skills.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="qsi-work-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h5 class="text-large font-bold">ManageBac Systems Administration:</h5>
+            <ul class="list-disc">
+                <li>Administered the ManageBac learning management system, overseeing user accounts, course
+                    creation, and data integrity for PYP, MYP, and DP programs.</li>
+                <li>Provided technical support and training to faculty, students, and parents on ManageBac functions.</li>
+                <li>Managed the end-to-end administration of NWEA MAP Growth testing.</li>
+                <li>Designed and delivered engaging, inquiry-based IB MYP Design curriculum, fostering critical
+                    thinking, creativity, and problem-solving skills.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="bcis-work-popover" popover class="p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 bg-white text-gray-800">
+        <div class="flex justify-between items-center mb-4">
+            <h5 class="text-large font-bold">ManageBac Systems Administration:</h5>
+            <ul class="list-disc">
+                <li>Administered the ManageBac learning management system, overseeing user accounts, course
+                    creation, and data integrity for PYP, MYP, and DP programs.</li>
+                <li>Provided technical support and training to faculty, students, and parents on ManageBac functions.</li>
+                <li>Managed the end-to-end administration of NWEA MAP Growth testing.</li>
+                <li>Designed and delivered engaging, inquiry-based IB MYP Design curriculum, fostering critical
+                    thinking, creativity, and problem-solving skills.</li>
+            </ul>
 </body>
 </html>
